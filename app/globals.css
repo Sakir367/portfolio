@@ -170,3 +170,17 @@
   display: inline-block;
   animation: wave 1.5s ease-in-out infinite;
 }
+
+
+@keyframes move-line {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.move-line {
+  animation: move-line 1.8s linear infinite;
+}

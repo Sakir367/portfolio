@@ -1,43 +1,80 @@
+"use client";
+
 import { PiExcludeSquareDuotone } from "react-icons/pi";
 import { FaHashtag } from "react-icons/fa";
+import { IoMenu } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 import { ModeToggle } from "../darkmode";
-const Navbar = () => {
-    return (
-        <div className="">
-       <div className="flex lg:flex-row flex-col justify-between items-start gap-8 lg:items-center">
-          <div className="flex gap-1 items-center">
-              <PiExcludeSquareDuotone className="text-3xl text-[#C778DD]     [text-shadow:0_0_5px_#ffffff,0_0_15px_#ffffff,0_0_30px_#ffffff]  animate-pulse" /> 
-           <p className="text-2xl text-[#320D6D] dark:text-white font-bold ">SAKIR</p>
-         </div>
-     <div className="hidden lg:block">
-           <div className="flex lg:flex-row flex-col gap-3">
-             <div className="flex gap-1 items-center">
-            <FaHashtag className="text-[16px] text-[#C778DD]" />
-             <p className="text-[16px] text-[#320D6D] dark:text-white font-medium">home</p>
-         
-         </div>
-          <div className="flex gap-1 items-center">
-            <FaHashtag className="text-[16px] text-[#C778DD]" />
-             <p className="text-[16px] text-[#ABB2BF] dark:text-[#ABB2BF] font-medium">about-me</p>
-         
-         </div>
-          <div className="flex gap-1 items-center">
-            <FaHashtag className="text-[16px]   text-[#C778DD]" />
-             <p className="text-[16px] text-[#ABB2BF] dark:text-[#ABB2BF] font-medium">skills</p>
-         </div>
+import { useState } from "react";
+import Link from "next/link";
 
-          <div className="flex gap-1 items-center">
-            <FaHashtag className="text-[16px] text-[#C778DD]" />
-             <p className="text-[16px] text-[#ABB2BF] dark:text-[ABB2BF] font-medium">contacts</p>
-         </div>
-         <div>
-                <ModeToggle/>
-         </div>
+const Navbar = () => {
+  const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  const data = [
+    { name: "home", link: "/" },
+    { name: "about-me", link: "/about" },
+    { name: "skills", link: "/skills" },
+    { name: "contacts", link: "/contacts" },
+  ];
+
+  return (
+    <nav className="w-full flex lg:flex-row flex-col justify-between items-center ">
+      {/* Top Bar */}
+      <div className="flex w-full justify-between items-center">
+        {/* Logo */}
+        <div className="flex gap-1 items-center">
+          <PiExcludeSquareDuotone className="text-3xl text-[#C778DD] animate-pulse" />
+          <p className="text-2xl text-[#320D6D] dark:text-white font-bold">
+            SAKIR
+          </p>
         </div>
-     </div>
-       </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-3xl text-[#C778DD]"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <RxCross2 /> : <IoMenu />}
+        </button>
+      </div>
+
+      {/* Menu */}
+      <div
+        className={`lg:flex w-full lg:items-center h-screen lg:h-auto lg:justify-end transition-all duration-300
+        ${open ? "block" : "hidden"} lg:block`}
+      >
+        <div className="flex lg:flex-row flex-col gap-4 mt-6 lg:mt-0">
+          {data.map((item, index) => (
+            <Link
+              key={item.name}
+              href={item.link}
+              onClick={() => {
+                setActive(index);
+                setOpen(false);
+              }}
+              className="flex gap-1 items-center"
+            >
+              <FaHashtag className="text-[16px] text-[#C778DD]" />
+              <p
+                className={`text-[16px] font-medium ${
+                  active === index
+                    ? "text-[#320D6D] dark:text-white"
+                    : "text-[#ABB2BF] dark:text-[#ABB2BF]"
+                }`}
+              >
+                {item.name}
+              </p>
+            </Link>
+          ))}
+
+          <ModeToggle />
         </div>
-    );
-}
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
+
