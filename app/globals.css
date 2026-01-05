@@ -184,3 +184,39 @@
 .move-line {
   animation: move-line 1.8s linear infinite;
 }
+
+
+@keyframes flow-vertical {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 24px; }
+}
+
+.flow-vertical {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #C778DD 0px,
+    #C778DD 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  background-size: 100% 24px;
+  animation: flow-vertical 0.8s linear infinite;
+}
+
+/* ===== HORIZONTAL FLOW LINE ===== */
+@keyframes flow-horizontal {
+  0% { background-position: 0 0; }
+  100% { background-position: 24px 0; }
+}
+
+.flow-horizontal {
+  background-image: repeating-linear-gradient(
+    to right,
+    #C778DD 0px,
+    #C778DD 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  background-size: 24px 100%;
+  animation: flow-horizontal 0.8s linear infinite;
+}

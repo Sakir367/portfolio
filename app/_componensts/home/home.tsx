@@ -52,7 +52,7 @@ const HomePage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-16">
                 <div className="my-auto">
                     <h2 className="text-2xl text-[#320D6D]  dark:text-white font-bold">Hi, I’m Sakir Ali — <span className="text-[#C778DD]">{displayText}</span></h2>
-                    <p className="text-[#ABB2BF] dark:text-[#ABB2BF] text-[14px] font-normal mt-5">I design and build clean, modern, and responsive web experiences with a focus on performance, usability, and creativity.</p>
+                    <p className="text-[#2e2828] dark:text-[#ABB2BF] text-[14px] font-normal mt-5">I design and build clean, modern, and responsive web experiences with a focus on performance, usability, and creativity.</p>
 
                     <button>
                         <h1 className="text-xl cursor-pointer font-semibold text-[#C778DD] mt-4 flex">
@@ -93,7 +93,7 @@ const HomePage = () => {
                     </div>
                     <div className="flex gap-2 items-center border border-[#C778DD] dark:border-white justify-center mt-4 py-1 px-10 w-fit mx-auto">
                           <PiExcludeSquareDuotone className="text-xl text-[#C778DD] animate-pulse" />
-                        <p className="text-[14px] text-[#ABB2BF]">Currently working on <span className="text-[#320D6D] dark:text-white">AGKraft</span></p>
+                        <p className="text-[14px] text-[#2e2828] dark:text-[#ABB2BF]">Currently working on <span className="text-[#320D6D] dark:text-white">AGKraft</span></p>
                     </div>
 
 
@@ -115,7 +115,7 @@ const HomePage = () => {
     </span>
 
  
-    <p className="text-[14px] text-[#320D6D] dark:text-white tracking-wide">
+    <p className="text-[14px] text-[#2e2828] dark:text-[#ABB2BF] tracking-wide">
      Building modern, responsive, and user-friendly web interfaces.
     </p>
 
@@ -125,7 +125,7 @@ const HomePage = () => {
     </span>
 
 
-    <div className="absolute text-[#320D6D] dark:text-white  right-0 -bottom-12 border border-gray-400 px-6 py-3 ">
+    <div className="absolute text-[#2e2828] dark:text-[#ABB2BF]  right-0 -bottom-12 border border-gray-400 px-6 py-3 ">
       <p className="text-[14px]">— Sakir Ali</p>
     </div>
   </div>

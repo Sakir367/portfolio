@@ -61,7 +61,7 @@ const Navbar = () => {
                 className={`text-[16px] font-medium ${
                   active === index
                     ? "text-[#320D6D] dark:text-white"
-                    : "text-[#ABB2BF] dark:text-[#ABB2BF]"
+                    : "text-[#f44141] dark:text-[#ABB2BF]"
                 }`}
               >
                 {item.name}
