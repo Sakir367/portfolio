@@ -7,7 +7,7 @@ const Skills = () => {
     <div className='mt-10'>
       <div className='flex gap-2 items-center'>
         <FaHashtag className="text-2xl text-[#C778DD]" />
-        <p className='text-xl text-[#320D6D]  dark:text-white font-bold'>Skills</p>
+        <p className='text-xl text-[#320D6D]  dark:text-white font-bold'>skills</p>
         <div className="w-[150] h-0.5 bg-[#C778DD] overflow-hidden">
           <div className="h-full w-3xl dark:bg-white bg-black move-line"></div>
         </div>

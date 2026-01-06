@@ -71,7 +71,7 @@ const HomePage = () => {
                     </Link>
                 </div>
                 <div className="mx-auto my-auto">
-                    <div className="relative w-fit">
+                    <div className="flex justify-end relative ">
                         {/* Bottom Image */}
                         <Image
                             src="/assets/images/profile.png"

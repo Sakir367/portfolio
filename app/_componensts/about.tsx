@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaHashtag } from "react-icons/fa"
 
@@ -36,6 +37,16 @@ function AboutME() {
                         </h1>
                     </Link>
             </div> 
+
+                <div className="flex justify-end md:justify-center">
+                      <Image
+                        src="/assets/images/image2.png"
+                        alt="Image2"
+                        width={500}
+                        height={500}
+                        className=""
+                      />
+                    </div>
             
             </div> 
     </div>

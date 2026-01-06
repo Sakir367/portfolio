@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
 
                     <div className='flex justify-center my-5'>
-                        <p className='text-[#2e2828] dark:text-[#ABB2BF] text-[14px] font-normal text-justify '>© Copyright 2025. Made by Sakir</p>
+                        <p className='text-[#2e2828] dark:text-[#ABB2BF] text-[14px] font-normal text-justify '>© Copyright 2026. Made by Sakir</p>
                     </div>
                 </div>
 
