@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../navbar/navbar";
 import Image from "next/image";
 import { PiExcludeSquareDuotone } from "react-icons/pi";
+import Link from 'next/link';
 
 const HomePage = () => {
     const textt = "Contact me!!";
@@ -49,12 +50,12 @@ const HomePage = () => {
     return (
         <div className="my-5 ">
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
                 <div className="my-auto">
                     <h2 className="text-2xl text-[#320D6D]  dark:text-white font-bold">Hi, I’m Sakir Ali — <span className="text-[#C778DD]">{displayText}</span></h2>
                     <p className="text-[#2e2828] dark:text-[#ABB2BF] text-[14px] font-normal mt-5">I design and build clean, modern, and responsive web experiences with a focus on performance, usability, and creativity.</p>
 
-                    <button>
+                    <Link href="/contacts">
                         <h1 className="text-xl cursor-pointer font-semibold text-[#C778DD] mt-4 flex">
                             {textt.split("").map((char, index) => (
                                 <span
@@ -67,7 +68,7 @@ const HomePage = () => {
                                 </span>
                             ))}
                         </h1>
-                    </button>
+                    </Link>
                 </div>
                 <div className="mx-auto my-auto">
                     <div className="relative w-fit">
@@ -107,7 +108,7 @@ const HomePage = () => {
 
             <div className="relative max-w-4xl mx-auto  p-8 text-white font-mono">
 
-  <div className="relative border border-gray-400 px-10 py-4">
+  <div className="relative border border-gray-400 px-4 lg:px-10 py-4">
 
 
     <span className="absolute -top-5 left-4 dark:bg-[#0A0A0A] bg-white px-2 text-3xl text-gray-300">
