@@ -86,12 +86,12 @@ const HomePage = () => {
                             alt="Logo Image"
                             width={100}
                             height={100}
-                            className="absolute top-4 left-4 z-10"
+                            className="absolute object-cover top-4 left-4 z-10"
                         />
 
                         
                     </div>
-                    <div className="flex gap-2 items-center border border-[#C778DD] dark:border-white justify-center mt-4 py-1 px-10 w-fit mx-auto">
+                    <div className="flex gap-2 items-center border border-[#C778DD] dark:border-white justify-center mt-4 py-1 px-2 lg:px-10 w-fit mx-auto">
                           <PiExcludeSquareDuotone className="text-xl text-[#C778DD] animate-pulse" />
                         <p className="text-[14px] text-[#2e2828] dark:text-[#ABB2BF]">Currently working on <span className="text-[#320D6D] dark:text-white">AGKraft</span></p>
                     </div>

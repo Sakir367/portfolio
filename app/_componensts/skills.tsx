@@ -48,7 +48,7 @@ const Skills = () => {
                 </div>
                 </div>
                 
-                <div className='w-full flex  lg:flex-row lg:flex-wrap  justify-center flex-col gap-10'>
+                <div className=' w-full flex  lg:flex-row lg:flex-wrap  justify-center flex-col gap-10'>
 <div className="flex flex-col items-center ">
 
   {/* Parent */}
@@ -60,12 +60,12 @@ const Skills = () => {
   <div className="w-0.5 h-8 flow-vertical"></div>
 
   {/* Horizontal connector */}
-  <div className="relative w-[160] lg:w-[240] h-0.5 flow-horizontal">
+  <div className="relative w-[180] lg:w-[240] h-0.5 flow-horizontal">
     {/* Center pointer (optional – helps alignment visually) */}
   </div>
 
   {/* Children */}
-  <div className="flex justify-between w-[240] lg:w-[320px] mt-2">
+  <div className="flex justify-between w-[260] lg:w-[320px] mt-2">
 
     {/* HTML */}
     <div className="flex flex-col items-center">
@@ -84,8 +84,8 @@ const Skills = () => {
     </div>
 
     {/* JavaScript */}
-    <div className="-mr-5 flex flex-col items-center">
-      <div className="w-0.5 h-6 flow-vertical"></div>
+    <div className=" flex flex-col items-center">
+      <div className="-mr-7 w-0.5 h-6 flow-vertical"></div>
       <div className="px-5 py-2 border text-[12px] lg:text-[14px] rounded-md">
         JavaScript
       </div>
@@ -108,12 +108,12 @@ const Skills = () => {
   <div className="w-0.5 h-8 flow-vertical"></div>
 
   {/* Horizontal connector */}
-  <div className="relative w-[160] lg:w-[280] h-0.5 flow-horizontal">
+  <div className="relative w-[180] lg:w-[250] h-0.5 flow-horizontal">
     {/* Center pointer (optional – helps alignment visually) */}
   </div>
 
   {/* Children */}
-  <div className="flex justify-between w-[240] lg:w-[380] mt-2">
+  <div className="flex justify-between w-[260] lg:w-[340] mt-2">
 
     {/* HTML */}
     <div className="flex flex-col items-center">
@@ -125,15 +125,15 @@ const Skills = () => {
 
     {/* CSS */}
     <div className="flex flex-col items-center">
-      <div className="w-0.5 h-6 flow-vertical"></div>
+      <div className=" w-0.5 h-6 flow-vertical"></div>
       <div className="px-3 lg:px-5 py-2 text-[12px] lg:text-[14px] border rounded-md">
         Next.js
       </div>
     </div>
 
     {/* JavaScript */}
-    <div className="-mr-5 flex flex-col items-center">
-      <div className="w-0.5 h-6 flow-vertical"></div>
+    <div className=" flex flex-col items-center">
+      <div className="-mr-7 lg:-mr-9 w-0.5 h-6 flow-vertical"></div>
       <div className="px-3 lg:px-5 py-2 border text-[12px] lg:text-[14px] rounded-md">
        Tailwind CSS
       </div>
@@ -154,12 +154,12 @@ const Skills = () => {
   <div className="w-0.5 h-8 flow-vertical"></div>
 
   {/* Horizontal connector */}
-  <div className="relative w-[160] lg:w-[240] h-0.5 flow-horizontal">
+  <div className="relative w-[190] lg:w-[240] h-0.5 flow-horizontal">
     {/* Center pointer (optional – helps alignment visually) */}
   </div>
 
   {/* Children */}
-  <div className="flex justify-between w-[240] lg:w-[310] mt-2">
+  <div className="flex justify-between w-[260] lg:w-[320px] mt-2">
 
     {/* HTML */}
     <div className="flex flex-col items-center">
@@ -178,8 +178,8 @@ const Skills = () => {
     </div>
 
     {/* JavaScript */}
-    <div className="-mr-5 flex flex-col items-center">
-      <div className="w-0.5 h-6 flow-vertical"></div>
+    <div className=" flex flex-col items-center">
+      <div className="-mr-7 w-0.5 h-6 flow-vertical"></div>
       <div className="px-5 py-2 text-[12px] lg:text-[14px] border rounded-md">
        VS Code
       </div>
