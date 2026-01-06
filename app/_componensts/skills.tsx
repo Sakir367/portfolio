@@ -27,8 +27,8 @@ const Skills = () => {
                         className="aspect-square"
                     />
                     <Image
-                        src="/assets/images/logo.png"
-                        alt="Logo Image"
+                        src="/assets/images/line.png"
+                        alt="Line"
                         width={100}
                         height={100}
                         className=""

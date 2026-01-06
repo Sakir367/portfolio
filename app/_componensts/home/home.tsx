@@ -82,8 +82,8 @@ const HomePage = () => {
 
                         {/* Top Image */}
                         <Image
-                            src="/assets/images/logo.png"
-                            alt="Logo Image"
+                            src="/assets/images/line.png"
+                            alt="Line"
                             width={100}
                             height={100}
                             className="absolute object-cover top-4 left-4 z-10"
